@@ -1,25 +1,27 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Web Developer Express 2010
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MKMDB", "..\..\WebSites\MKMDB\", "{3C3E78BD-9F9D-401C-B02A-CF1083A07F6E}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "mkmdb-proekt", "http://localhost:51237", "{484B1691-5ADC-4733-82A5-879F14877C97}"
 	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/MKMDB"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\MKMDB\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\MKMDB\"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51237"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\GitHub\mkmdb-proekt\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51237\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/MKMDB"
-		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\MKMDB\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\MKMDB\"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51237"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\GitHub\mkmdb-proekt\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51237\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "51708"
-		DefaultWebSiteLanguage = "Visual C#"
+		SlnRelativePath = "..\..\..\GitHub\mkmdb-proekt\"
 	EndProjectSection
 EndProject
 Global
@@ -27,8 +29,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3C3E78BD-9F9D-401C-B02A-CF1083A07F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C3E78BD-9F9D-401C-B02A-CF1083A07F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{484B1691-5ADC-4733-82A5-879F14877C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{484B1691-5ADC-4733-82A5-879F14877C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
