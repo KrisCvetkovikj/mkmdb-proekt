@@ -5,25 +5,25 @@
     </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <h2>
-        Welcome to the Macedonian Movie Database!
+        Добредојде на македонската база на филмови!
     </h2>
     <p>
-        Click on a movie for more info:</p>
+        Кликни на &quot;Детали&quot; за повеќе информации:</p>
     <div>
         <asp:GridView ID="gView1" runat="server" AllowPaging="True" AllowSorting="True" 
             AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" 
-            BorderStyle="Double" BorderWidth="3px" CellPadding="4" DataKeyNames="Id" 
-            DataSourceID="SqlDataSource1" GridLines="Horizontal" PageSize="5" 
+            BorderStyle="Double" BorderWidth="3px" CellPadding="4" 
+            DataSourceID="SqlDataSource2" GridLines="Horizontal" PageSize="5" 
             onselectedindexchanged="Unnamed1_SelectedIndexChanged">
             <Columns>
-                <asp:CommandField 
-                    ShowSelectButton="True" />
-                <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" 
+                <asp:CommandField ShowSelectButton="True" SelectText="Детали" />
+                <asp:BoundField DataField="Id" HeaderText="Реден Број" 
                     SortExpression="Id" />
-                <asp:BoundField DataField="Title" HeaderText="Title" SortExpression="Title" />
-                <asp:BoundField DataField="ReleaseYear" HeaderText="ReleaseYear" 
+                <asp:BoundField DataField="Title" HeaderText="Име на филм" 
+                    SortExpression="Title" />
+                <asp:BoundField DataField="ReleaseYear" HeaderText="Година" 
                     SortExpression="ReleaseYear" />
-                <asp:BoundField DataField="Director" HeaderText="Director" 
+                <asp:BoundField DataField="Director" HeaderText="Режисер" 
                     SortExpression="Director" />
             </Columns>
             <FooterStyle BackColor="White" ForeColor="#333333" />
@@ -36,6 +36,10 @@
             <SortedDescendingCellStyle BackColor="#E5E5E5" />
             <SortedDescendingHeaderStyle BackColor="#275353" />
         </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
+            ConnectionString="<%$ ConnectionStrings:ApplicationServices %>" 
+            SelectCommand="SELECT * FROM [Movie] ORDER BY [Id], [Title], [ReleaseYear]">
+        </asp:SqlDataSource>
         <br />
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
             ConnectionString="<%$ ConnectionStrings:ApplicationServices %>" 

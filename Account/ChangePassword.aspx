@@ -5,13 +5,13 @@
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <h2>
-        Change Password
+        Промени лозинка
     </h2>
     <p>
-        Use the form below to change your password.
+        Искористи ја следната форма за да ја смените вашата лозинка.
     </p>
     <p>
-        New passwords are required to be a minimum of <%= Membership.MinRequiredPasswordLength %> characters in length.
+        Новите лозинки треба да имаат минимум <%= Membership.MinRequiredPasswordLength %> карактери.
     </p>
     <asp:ChangePassword ID="ChangeUserPassword" runat="server" CancelDestinationPageUrl="~/" EnableViewState="false" RenderOuterTable="false" 
          SuccessPageUrl="ChangePasswordSuccess.aspx">
@@ -23,35 +23,35 @@
                  ValidationGroup="ChangeUserPasswordValidationGroup"/>
             <div class="accountInfo">
                 <fieldset class="changePassword">
-                    <legend>Account Information</legend>
+                    <legend>Информации за корисник</legend>
                     <p>
-                        <asp:Label ID="CurrentPasswordLabel" runat="server" AssociatedControlID="CurrentPassword">Old Password:</asp:Label>
+                        <asp:Label ID="CurrentPasswordLabel" runat="server" AssociatedControlID="CurrentPassword">Стара лозинка:</asp:Label>
                         <asp:TextBox ID="CurrentPassword" runat="server" CssClass="passwordEntry" TextMode="Password"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="CurrentPasswordRequired" runat="server" ControlToValidate="CurrentPassword" 
-                             CssClass="failureNotification" ErrorMessage="Password is required." ToolTip="Old Password is required." 
+                             CssClass="failureNotification" ErrorMessage="Лозинката е задолжителна." ToolTip="Старата лозинка е задолжителна." 
                              ValidationGroup="ChangeUserPasswordValidationGroup">*</asp:RequiredFieldValidator>
                     </p>
                     <p>
-                        <asp:Label ID="NewPasswordLabel" runat="server" AssociatedControlID="NewPassword">New Password:</asp:Label>
+                        <asp:Label ID="NewPasswordLabel" runat="server" AssociatedControlID="NewPassword">Нова лозинка:</asp:Label>
                         <asp:TextBox ID="NewPassword" runat="server" CssClass="passwordEntry" TextMode="Password"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="NewPasswordRequired" runat="server" ControlToValidate="NewPassword" 
-                             CssClass="failureNotification" ErrorMessage="New Password is required." ToolTip="New Password is required." 
+                             CssClass="failureNotification" ErrorMessage="Новата лозинка е задолжителна." ToolTip="Новата лозинка е задолжителна." 
                              ValidationGroup="ChangeUserPasswordValidationGroup">*</asp:RequiredFieldValidator>
                     </p>
                     <p>
-                        <asp:Label ID="ConfirmNewPasswordLabel" runat="server" AssociatedControlID="ConfirmNewPassword">Confirm New Password:</asp:Label>
+                        <asp:Label ID="ConfirmNewPasswordLabel" runat="server" AssociatedControlID="ConfirmNewPassword">Потврди нова лозинка:</asp:Label>
                         <asp:TextBox ID="ConfirmNewPassword" runat="server" CssClass="passwordEntry" TextMode="Password"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="ConfirmNewPasswordRequired" runat="server" ControlToValidate="ConfirmNewPassword" 
-                             CssClass="failureNotification" Display="Dynamic" ErrorMessage="Confirm New Password is required."
-                             ToolTip="Confirm New Password is required." ValidationGroup="ChangeUserPasswordValidationGroup">*</asp:RequiredFieldValidator>
+                             CssClass="failureNotification" Display="Dynamic" ErrorMessage="Потврдување на нова лозинка е задолжително."
+                             ToolTip="Потврдување на нова лозинка е задолжително." ValidationGroup="ChangeUserPasswordValidationGroup">*</asp:RequiredFieldValidator>
                         <asp:CompareValidator ID="NewPasswordCompare" runat="server" ControlToCompare="NewPassword" ControlToValidate="ConfirmNewPassword" 
-                             CssClass="failureNotification" Display="Dynamic" ErrorMessage="The Confirm New Password must match the New Password entry."
+                             CssClass="failureNotification" Display="Dynamic" ErrorMessage="Потврдата за нова лозинка мора да е иста како новата лозинка."
                              ValidationGroup="ChangeUserPasswordValidationGroup">*</asp:CompareValidator>
                     </p>
                 </fieldset>
                 <p class="submitButton">
-                    <asp:Button ID="CancelPushButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel"/>
-                    <asp:Button ID="ChangePasswordPushButton" runat="server" CommandName="ChangePassword" Text="Change Password" 
+                    <asp:Button ID="CancelPushButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Откажи"/>
+                    <asp:Button ID="ChangePasswordPushButton" runat="server" CommandName="ChangePassword" Text="Промени лозинка" 
                          ValidationGroup="ChangeUserPasswordValidationGroup"/>
                 </p>
             </div>

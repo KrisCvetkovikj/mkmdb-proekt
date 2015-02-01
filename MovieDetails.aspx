@@ -2,6 +2,16 @@
     CodeFile="MovieDetails.aspx.cs" Inherits="About" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+    .style2
+    {
+        width: 46px;
+    }
+    </style>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <h2>
@@ -9,12 +19,39 @@
     </h2>
     <p>
         
-        <asp:Image ID="Image1" runat="server" />
+        <table class="style1">
+            <tr>
+                <td><asp:Image ID="Image1" runat="server" />
+                    &nbsp;</td>
+                <td class="style2">&nbsp;</td>
+                <td><asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="style2">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="lbActors" runat="server" Text="Label"></asp:Label>
+                </td>
+                <td class="style2">&nbsp;</td>
+                <td>
+                    <asp:Label ID="lbDirector" runat="server" Text="Label"></asp:Label>
+                    <br />
+                    <br />
+                    <asp:Label ID="lbGenres" runat="server" Text="Label"></asp:Label>
+                </td>
+            </tr>
+        </table>
+        
+        
+        
+    
         
     </p>
-    <p>
+<p>
         
-        <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
-        
-    </p>
+    &nbsp;</p>
 </asp:Content>

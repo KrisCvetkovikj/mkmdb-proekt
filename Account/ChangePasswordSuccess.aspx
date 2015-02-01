@@ -5,9 +5,9 @@
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <h2>
-        Change Password
+        Промени лозинка
     </h2>
     <p>
-        Your password has been changed successfully.
+        Вашата лозинка беше променета успешно.
     </p>
 </asp:Content>
