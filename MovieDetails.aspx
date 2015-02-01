@@ -1,16 +1,20 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="MovieDetails.aspx.cs" Inherits="MovieDetails" %>
+﻿<%@ Page Title="Movie Details" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
+    CodeFile="MovieDetails.aspx.cs" Inherits="About" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    balbblf
-    </div>
-    </form>
-</body>
-</html>
+<asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
+</asp:Content>
+<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
+    <h2>
+        <asp:Label ID="Label1" runat="server" Text="" Font-Bold="true" Font-Size="Larger"></asp:Label>
+    </h2>
+    <p>
+        
+        <asp:Image ID="Image1" runat="server" />
+        
+    </p>
+    <p>
+        
+        <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+        
+    </p>
+</asp:Content>

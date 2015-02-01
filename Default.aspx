@@ -37,7 +37,6 @@
             <SortedDescendingHeaderStyle BackColor="#275353" />
         </asp:GridView>
         <br />
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
             ConnectionString="<%$ ConnectionStrings:ApplicationServices %>" 
             DeleteCommand="DELETE FROM [Movie] WHERE [Id] = @Id" 
